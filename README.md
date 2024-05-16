@@ -3,6 +3,7 @@
 ```bash
 cd docker
 docker compose up -d
+docker exec -it test-fpm composer install
 docker exec -it test-fpm php artisan migrate
 ```
 
